@@ -12,7 +12,10 @@ jobs:
   secondjob:
     runs-on: ubuntu-latest
     steps:
-      - name: install java
-        run: sudo apt-get install java -y
+      - name: update system
+        run: sudo apt-get update -y
         
+      - name: install java
+        run: sudo apt install default-jdk
+    
      
